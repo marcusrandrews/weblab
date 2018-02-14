@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- meta info -->
+    <title>Web Laboratory</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Freelance web development based in Canberra">
+    <meta name="keywords" content="web development canberra, web developer canberra, freelance web developer">
+    <meta name="author" content="Marcus Andrews">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- above the fold css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+
+<!-- scripts -->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- navbar script -->
+    <script type="text/javascript">
+    // shows menu
+      function showMenu() {
+        var element = document.getElementById('sideNav')
+        var elementTwo = document.getElementById('menuIcon')
+        element.classList.toggle('hidden')
+        elementTwo.classList.toggle('hidden')
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div class="root">
+
+<!-- FixedNavbar -->
+      <div class="fixed-nav">
+        <div id="menuIcon" class="menu">
+          <button onclick="showMenu()"><i id="menuColor" class="fas fa-bars light"></i></button>
+        </div>
+        <div class="logo">
+          <a href="#"><h1 id="logoColor" class="light">Web Laboratory</h1></a>
+        </div>
+        <div class="login">
+          <a id="tr-log" href="#">Login</a>
+        </div>
+        <div class="scroll-nav">
+          <nav>
+            <ul>
+              <li><a href="#"><i id="#dot1" class="far fa-circle"></i></a></li>
+              <li><a href="#"><i id="#dot2" class="fas fa-circle"></i></a></li>
+              <li><a href="#"><i id="#dot3" class="fas fa-circle"></i></a></li>
+              <li><a href="#"><i id="#dot4" class="fas fa-circle"></i></a></li>
+              <li><a href="#"><i id="#dot5" class="fas fa-circle"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+<!-- side-nav -->
+      <div id="sideNav" class="side-nav hidden">
+        <ul>
+          <li class="side-nav-close"><button onclick="showMenu()"><i class="far fa-times-circle"></i></button></li>
+          <br>
+          <li class="side-nav-link"><a href="">About</a></li>
+          <li class="side-nav-link"><a href="">Services</a></li>
+          <li class="side-nav-link"><a href="">Packages</a></li>
+          <li class="side-nav-link"><a href="">Contact</a></li>
+          <br>
+          <li class="side-nav-login"><a href="">Login</a></li>
+        </ul>
+      </div>
+
+
+<!-- particlesjs -->
+      <section id="particles-js" class="home section">
+        <div class="particles-inner">
+          <div class="info">
+            <h1 id="big">Jargonless, freelance<br> web development<br> for small business.</h1>
+            <h2 id="small">Modern technology for<br> user experienced focused<br> jargonless support.</h2>
+            <ul class="main-buttons">
+              <li><a id="one" class="bttn" href="">View Packages</a></li>
+              <li><a id="two" class="bttn" href="">Get In Touch</a></li>
+            </ul>
+          </div>
+          <div class="top-nav">
+            <ul>
+              <li class=""><a href="">About</a></li>
+              <li><i class="fas fa-caret-right"></i></li>
+              <li class=""><a href="">Services</a></li>
+              <li><i class="fas fa-caret-right"></i></li>
+              <li class=""><a href="">Packages</a></li>
+              <li><i class="fas fa-caret-right"></i></li>
+              <li class=""><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div> <!-- end top inner -->
+      </section> <!-- end top container -->
+
+
+
+
+<!-- about -->
+      <section id="about" class="about section">
+        <div class="title">
+          <h2 id="about-title">ABOUT</h2>
+        </div>
+      </section>
+
+<!-- services -->
+      <section id="services" class="services section">
+        <div class="title">
+          <h2 id="packages-title">SERVICES</h2>
+        </div>
+      </section>
+
+
+<!-- packages -->
+      <section id="packages" class="packages section">
+        <div class="title">
+          <h2 id="services-title">PACKAGES</h2>
+        </div>
+      </section>
+
+<!-- footer -->
+      <section id="contact" class="contact section">
+
+          <div class="form-container">
+              <h2 id="contact-title">CONTACT</h3>
+             <form class="">
+<!-- Name -->
+               <div class="group">
+                 <div class="input-field">
+                   <input id="full_name" type="text" required><span class="highlight"></span><span class="bar"></span>
+                   <label for="full_name">Your Name *</label>
+                 </div>
+               </div>
+              <!-- company name -->
+              <div class="group">
+                <div class="input-field">
+                  <input id="business_name" type="text" required><span class="highlight"></span><span class="bar"></span>
+                  <label for="business_name">Organisation Name</label>
+                </div>
+              </div>
+<!-- phone -->
+               <div class="group">
+                 <div class="input-field">
+                   <input id="phone" type="text" class="highlight" required><span class="highlight"></span><span class="bar"></span>
+                   <label for="password">Phone Number *</label>
+                 </div>
+               </div>
+<!-- email -->
+               <div class="group">
+                 <div class="input-field">
+                   <input id="email" type="text" class="highlight" required><span class="highlight"></span><span class="bar"></span>
+                   <label for="email">Email Address *</label>
+                 </div>
+               </div>
+<!-- textarea -->
+               <div class="group">
+                 <div class="input-field">
+                   <textarea id="details"  rows="7" maxlength="900" class="material" required></textarea><span class="highlight"></span><span class="bar"></span>
+                   <label for="details">Enquiry Details :</label>
+                 </div>
+               </div>
+<!-- reCAPTCHA and submit -->
+               <div class="recapmit">
+                  <!--<div class="g-recaptcha" data-sitekey="6LdmxUUUAAAAAAaBrLLaewGMbbmyoeLvR20SYeYP"></div>-->
+                  <div class="form-submit-button">
+                    <button  id="form-submitter" class="bttn"type="submit" name="button">Submit</button>
+                  </div>
+                </div>
+
+             </form>
+           </div>
+
+           <div class="australia">
+              <img src="/images/map.jpg" alt="">
+           </div>
+
+
+      </section>
+    </div>
+
+    <script src="assests/js/" type="text/javascript"></script>
+
+<!--
+    <script>
+
+      function loadCSS(href){
+        var ss = window.document.createElement('link'),
+            ref = window.document.getElementsByTagName('head')[0];
+
+        ss.rel = 'stylesheet';
+        ss.href = href;
+
+        // temporarily, set media to something non-matching to ensure it'll
+        // fetch without blocking render
+        ss.media = 'only x';
+
+        ref.parentNode.insertBefore(ss, ref);
+
+        setTimeout( function(){
+          // set media back to `all` so that the stylesheet applies once it loads
+          ss.media = 'all';
+        },0);
+      }
+      loadCSS('./assets/css/main.css');
+
+    </script>
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    </noscript>
+
+    <script src='particles.min.js'></script>
+    <script  src="particles.js"></script> -->
+  </body>
+</html>
