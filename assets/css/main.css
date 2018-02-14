@@ -1,58 +1,15 @@
+/* IMPORTS */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300|Source+Code+Pro|Press+Start+2P');
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
+/* RESET */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;text-decoration:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;font-family:Source Sans Pro,sans-serif}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}
 
+/* ABOVE THE FOLD */
 .root, body, html {
   width: 100%;
   height: 100%;
   background-color: #13161B;
 }
-
-
 /* fixed-nav */
 .fixed-nav {
   position: fixed;
@@ -67,12 +24,10 @@ table {
   ". . . scroll-nav"
   ". . . .";
 }
-
 .menu {
   grid-area: menu;
   text-align: center;
 }
-
 .menu button {
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -81,8 +36,6 @@ table {
   overflow: hidden;
   outline:none;
 }
-
-
 .fa-bars {
   color: #ffffff;
   z-index: 10;
@@ -90,44 +43,29 @@ table {
   font-size: 3.5vh;
   margin-top: 3.2vh;
 }
-
-.light-border {
-  border: 1px #ffffff solid;
-}
-
-.dark-border {
-  border: 1px #000000 solid;
-}
-
-
 .fa-bars:hover {
   top: -.2vh;
   font-size: 3.8vh;
 }
-
 .fa-circle {
   color: #ffffff;
   font-size: 1vh;
   margin-top: auto;
   margin-bottom: auto;
 }
-
 .fa-circle:hover {
   box-shadow: 0px 0px 5px 2px #fafafa;
   border-radius: 100%;
 }
-
 .logo {
   grid-area: logo;
 }
-
 .logo h1 {
   color: #ffffff;
   margin-top: 3.5vh;
   font-family: 'Press Start 2P', cursive;
   font-size: 3vh;
 }
-
 .login {
   grid-area: login;
 }
@@ -142,16 +80,13 @@ table {
   border-radius: 10vh;
   padding: .75vh 4vh .85vh 4vh;
 }
-
 .login a:hover, .side-nav-login a:hover {
   box-shadow: 0px 0px 5px 2px #fafafa;
-  border: 1px #000000 solid;
+  border: 1px #ffffff solid;
 }
-
 .scroll-nav {
   grid-area: scroll-nav;
 }
-
 .scroll-nav ul {
   position: relative;
   top: 27vh;
@@ -159,13 +94,10 @@ table {
   margin-right: 6vh;
 }
 
-
-
 /* side-nav */
 .hidden {
   display: none;
 }
-
 .side-nav {
   position: fixed;
   z-index: 100;
@@ -173,14 +105,12 @@ table {
   width: 16%;
   background-color: Transparent;
 }
-
 .side-nav-close {
   position: relative;
   top: 3.5vh;
   left: 7.6vh;
   float: left;
 }
-
 .side-nav-close button {
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -189,21 +119,16 @@ table {
   overflow: hidden;
   outline:none;
 }
-
 .fa-times-circle {
   font-size: 3vh;
   color: #ffffff;
 }
-
-
 .side-nav ul li a {
   color: #ffffff;
 }
-
 .side-nav ul li a:hover {
   border-bottom: 3px #ffffff solid;
 }
-
 .side-nav-link {
   position: relative;
   top: 10vh;
@@ -211,14 +136,12 @@ table {
   margin-bottom: 3vh;
   font-size: 3vh;
 }
-
 .side-nav-login {
   position: relative;
   top: 11vh;
   margin-left: 6.5vh;
   font-size: 3vh;
 }
-
 .side-nav-login a {
   color: #000000;
   font-size: 2.3vh;
@@ -229,9 +152,7 @@ table {
 
 
 
-
-/* home */
-
+/* HOME */
 #particles-js {
   position: relative;
   top: 0px;
@@ -243,8 +164,6 @@ table {
   background-size: cover;
   background-repeat: repeat;
 }
-
-
 .home-inner {
   position: absolute;
   width: 100%;
@@ -258,7 +177,6 @@ table {
   ". info info ."
   ". top-nav top-nav .";
 }
-
 .info {
   grid-area: info;
 }
@@ -268,17 +186,14 @@ table {
   color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 #big {
   font-size: 5vh;
   font-weight: bold;
   margin-bottom: 2vh;
 }
-
 #small {
   font-size: 3vh;
 }
-
 .main-buttons {
   position: relative;
   top: 14vh;
@@ -290,7 +205,6 @@ table {
   padding: 1.2vh 3.5vh;
   border-radius: 3px;
 }
-
 #one {
   background-color: #2B9EEB;
   border: 1px #2B9EEB solid;
@@ -316,7 +230,6 @@ table {
   color: #000000;
   font-size: 2.5vh;
 }
-
 .top-nav {
   grid-area: top-nav;
 }
@@ -332,22 +245,17 @@ table {
   font-weight: lighter;
   color: #ffffff;
 }
-
 .top-nav ul li a {
   color: #ffffff;
 }
-
 .top-nav ul li a:hover {
   border-bottom: 3px #fafafa solid;
 }
-
 .fa-caret-right {
   color: #ffffff;
   margin-left: 2vh;
   margin-right: 2vh;
 }
-
-
 /* end above the fold */
 
 
@@ -371,7 +279,6 @@ table {
   ". . . . ."
   ". . . . .";
 }
-
 .title h2 {
   grid-area: title;
   position: relative;
@@ -382,7 +289,6 @@ table {
   font-weight: 300;
   margin-bottom: 5vh;
 }
-
 
 
 
@@ -399,12 +305,10 @@ table {
   grid-template-areas:
   "form-container australia";
 }
-
 .australia {
   grid-area: australia;
   margin: auto;
 }
-
 .australia img {
   position: relative;
   left: -5vh;
@@ -412,8 +316,6 @@ table {
   width: 60vh;
   width: 60vh;
 }
-
-
 .form-container {
   grid-area: form-container;
   position: relative;
@@ -425,28 +327,23 @@ table {
   color: #ffffff;
   font-weight: 200;
 }
-
 #contact-title {
   font-size: 5vh;
   letter-spacing: .3vh;
   font-weight: 300;
   margin-bottom: 5vh;
 }
-
 .form {
   height: 100%;
   width: 100%;
 }
-
 .group {
   position: relative;
   margin: 3.5vh 0vh;
 }
-
 textarea {
   resize: none;
 }
-
 input, textarea {
   background: none;
   font-family: 'Source Sans Pro', sans-serif;
@@ -459,12 +356,10 @@ input, textarea {
   border-bottom: 1px #ffffff solid;
   width: 98%;
 }
-
 input:focus,
 textarea:focus {
   outline: none;
 }
-
 input:focus ~ label, input:valid ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label {
@@ -472,12 +367,10 @@ textarea:valid ~ label {
   font-size: 1.2vh;
   color: #636363;
 }
-
 input:focus ~ .bar:before,
 textarea:focus ~ .bar:before {
   width: 100%;
 }
-
 label {
   color: #ffffff;
   font-size: 2vh;
@@ -489,7 +382,6 @@ label {
   -webkit-transition: 200ms ease all;
   transition: 200ms ease all;
 }
-
 .bar {
   position: relative;
   display: block;
@@ -506,13 +398,11 @@ label {
   transition: 200ms ease all;
   left: 0%;
 }
-
 .recapmit {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-
 .g-recaptcha {
   position: relative;
   left: 5vh;
@@ -521,8 +411,6 @@ label {
   transform-origin:0 0;
   -webkit-transform-origin:0 0;"
 }
-
-
 #form-submitter {
   position: relative;
   background-color: #31CF65;
@@ -534,6 +422,4 @@ label {
   height: 5.8vh;
   width: 15vh;
 }
-
-
-/* services */
+Z
